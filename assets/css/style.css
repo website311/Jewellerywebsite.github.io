@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =================navbar=============== */
+.navbar{
+  /* background-color: #1c1b19; */
+  background-color: #353530;
+
+border-bottom: 1px solid  #353530;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  padding-left: 49px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #fcd462;
+}
+@media screen and (max-width:990px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+      float: right !important;
+  }  
+}
+@media screen and (max-width:330px) {
+.handpicked .handpicked-t{
+  font-size: 30px !important;
+}
+.rings .slide > div{
+  height: 100% !important;
+}
+ .rings .slide{
+ height: 362px !important;
+}
+.about .about-title .my{
+  font-size: 33px !important;
+  padding-top: 132px;
+}
+}
+/* ====================home=============== */
+.home{
+    width: 100%;
+    height: auto;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-color: #1c1b19;
+}
+.home .title h1{
+    padding-top: 28%;
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.home .title .btn{
+    border-radius: 4px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #fcd462;
+    background-color: #fcd462;
+}
+.home .title .btn:hover{
+    border-radius: 4px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    transition: 1s;
+    /* box-shadow: -1px 6px 30px 0px #fcd462; */
+    background-color: #fcd462;
+}
+.home .title p{
+    font-size: 18px;
+}
+@media screen and (max-width: 428px) {
+.home .title h1{
+  font-size: 35px;
+}
+
+}
+/* ======================rings=============== */
+.rings{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: url(../img/bg2.jpg); */
+    background-color: #353530;
+}
+      	
+.rings .slide {
+  width: 100%;
+  height: 100% !important;
+  /* border-radius: 18px; */
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.rings .slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+}
+.rings .slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.rings .slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.rings .slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.rings .slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width:768px) {
+  .rings .slide{
+    height: 600px !important;
+    margin-top: 20px !important;
+  }
+}
+/* ====================handpicked================= */
+.handpicked{
+   background-color: #353530;
+}
+.handpicked .card{
+  color: white;
+  border: none;
+  border-radius: 0px;
+}
+.handpicked .card .card-body{
+  background-color: #1c1b19;
+}
+.handpicked .card .card-body h5{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+.handpicked .card .card-body p{
+  color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 500;
+}
+.handpicked .handpicked-t{
+  color: white;
+  padding-top: 7%;
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+/* =============portofolio============= */
+
+/* ===================tabs=============== */
+.tabs{
+  background-color: #1c1b19;
+}
+.tabs .nav{
+  justify-content: center;
+}
+.tabs .card-tabs .nav-item .nav-link{
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+   background-color: #fcd462;
+}
+.tabs .card-tabs .nav-item .nav-link.active{
+    background-color: #fcd462;
+}
+.tabs .card-tabs .btn{
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  justify-content: center;
+  border: 2px solid #fcd462;
+  background-color: none !important;
+}
+.tabs .card-tabs .btn:hover{
+  border: 2px solid #fcd462;
+  background-color: #fcd462;
+
+}
+
+
+/* =============================================about-page========================= */
+.about{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/about-bg.jpg);
+}
+.about .about-title p{
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-top: 7%;
+}
+.about .about-title h6{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.about .about-title h1{
+  font-size: 70px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-title .btn{
+  border-radius: 4px;
+    font-size: 17px;
+    color: white;
+    background-color: #fcd462;
+
+    border: 1px solid #fcd462;
+  font-family: 'Poppins', sans-serif;
+
+}
+.about .about-title .btn:hover{
+    color: white;
+    transition: 1s;
+  border-radius: 4px;
+    background-color: #fcd462;
+}
+    
+/* ==============================portofli-pagr============================== */
+.designs .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.designs .container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.designs .container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  color: #fcd462;
+  padding-bottom: 10px;
+  /* border-bottom: 3px solid #fcd462; */
+}
+
+.designs .container .heading h3 span{
+  font-weight: 100;
+  color: white;
+}
+.designs .container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.designs .container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.designs .container .box .dream img{
+  width: 94%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+@media screen and (max-width:769px) {
+.designs .container .box .dream img{
+  /* width: 100%; */
+}
+}
+
+.designs .container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.designs .container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+  .designs .container .box .dream{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 643px){
+  .designs .container .heading{
+  width: 100%;
+}
+.designs .container .heading h3{
+  font-size: 2em;
+
+}
+
+}
+/* ------================footer-------------------- */
+.footer{
+  background-color: #353530;
+  color: #fff;
+}
+.footer .icon a{
+  color: #fcd462;
+  font-size: 21px;
+}
+.footer .icon .fa{
+  color: #fcd462;
+  font-size: 21px;
+}
+.footer .content h3{
+  font-size: 20px;
+}
+.footer .content p a{
+  text-decoration: none;
+  color: white;
+}
+.footer .list ul li a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.footer .list ul li{
+  list-style: none;
+}
+.footer .icons a{
+  color: #fcd462;
+  font-size: 22px;
+  cursor: pointer;
+}
+@media screen and (max-width:762px) {
+  .footer .logo img{
+  width: 59%;
+}
+.footer .logo{
+  text-align: center;
+}
+}
